@@ -98,10 +98,10 @@ public class SortingHill {
                 break;
             case SHIFT_ENDED_EVENT:
                 int lastTrainsCount = 0;
-                for (Integer path: assignedPaths.keySet()) {
-                    String train =  assignedPaths.get(path);
+                for (Integer path : assignedPaths.keySet()) {
+                    String train = assignedPaths.get(path);
                     List<String> trainContent = trainsFormed.get(train);
-                    if(trainContent.size() > 1){
+                    if (trainContent.size() > 1) {
                         lastTrainsCount++;
                     } else {
                         trainsFormed.remove(train);
